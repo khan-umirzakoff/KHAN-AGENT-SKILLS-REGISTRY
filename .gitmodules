@@ -1,0 +1,23 @@
+[submodule "sources/addy-agent-skills"]
+	path = sources/addy-agent-skills
+	url = https://github.com/addyosmani/agent-skills.git
+
+[submodule "sources/anthropic-skills"]
+	path = sources/anthropic-skills
+	url = https://github.com/anthropics/skills.git
+
+[submodule "sources/openai-skills"]
+	path = sources/openai-skills
+	url = https://github.com/openai/skills.git
+
+[submodule "sources/vercel-agent-skills"]
+	path = sources/vercel-agent-skills
+	url = https://github.com/vercel-labs/agent-skills.git
+
+[submodule "sources/shadcn-ui"]
+	path = sources/shadcn-ui
+	url = https://github.com/shadcn-ui/ui.git
+
+[submodule "sources/openai-plugins"]
+	path = sources/openai-plugins
+	url = https://github.com/openai/plugins.git
