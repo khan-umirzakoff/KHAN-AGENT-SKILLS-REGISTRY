@@ -1,26 +1,37 @@
 [submodule "sources/addy-agent-skills"]
 	path = sources/addy-agent-skills
 	url = https://github.com/addyosmani/agent-skills.git
+	branch = main
 
 [submodule "sources/anthropic-skills"]
 	path = sources/anthropic-skills
 	url = https://github.com/anthropics/skills.git
+	branch = main
 
 [submodule "sources/openai-skills"]
 	path = sources/openai-skills
 	url = https://github.com/openai/skills.git
+	branch = main
 
 [submodule "sources/vercel-agent-skills"]
 	path = sources/vercel-agent-skills
 	url = https://github.com/vercel-labs/agent-skills.git
+	branch = main
 
 [submodule "sources/shadcn-ui"]
 	path = sources/shadcn-ui
 	url = https://github.com/shadcn-ui/ui.git
+	branch = main
 
 [submodule "sources/openai-plugins"]
 	path = sources/openai-plugins
 	url = https://github.com/openai/plugins.git
+	branch = main
 [submodule "sources/designer-skills"]
 	path = sources/designer-skills
 	url = https://github.com/Owl-Listener/designer-skills.git
+	branch = main
+[submodule "sources/ui-ux-pro-max"]
+	path = sources/ui-ux-pro-max
+	url = https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git
+	branch = main
