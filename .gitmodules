@@ -21,3 +21,6 @@
 [submodule "sources/openai-plugins"]
 	path = sources/openai-plugins
 	url = https://github.com/openai/plugins.git
+[submodule "sources/designer-skills"]
+	path = sources/designer-skills
+	url = https://github.com/Owl-Listener/designer-skills.git

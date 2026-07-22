@@ -19,6 +19,7 @@ Canonical path:
 - `sources/addy-agent-skills` - Addy Osmani production engineering skills.
 - `sources/anthropic-skills` - Anthropic public Agent Skills.
 - `sources/vercel-agent-skills` - Vercel React, composition, and web UI guidance.
+- `sources/designer-skills` - Owl Listener design collection with 9 focused plugins and 96 design skills.
 - `sources/shadcn-ui` - official shadcn/ui skill, sparse checkout of `skills/shadcn`.
 - `sources/openai-plugins` - current OpenAI Codex plugin examples, including `plugins/build-web-apps`.
 - `sources/openai-skills` - legacy OpenAI skills catalog. This upstream repo marks itself deprecated; keep it only as a reference for old curated skills and prefer `sources/openai-plugins` for current Codex plugin examples.

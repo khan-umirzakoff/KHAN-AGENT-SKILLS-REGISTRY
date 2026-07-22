@@ -1,0 +1,4 @@
+interface:
+  display_name: "Coolify Ops"
+  short_description: "Operate Coolify apps, envs, logs, deploys, and CORS safely"
+  default_prompt: "Investigate this Coolify deployment issue, apply the safest fix, and verify the result."
