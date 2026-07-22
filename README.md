@@ -13,6 +13,7 @@ Canonical path:
 - `curated/` - selected useful skills copied from sources.
 - `sets/` - per-project install lists.
 - `scripts/install-set.sh` - copies a set into a project at `.agents/skills`.
+- `scripts/update-registry-sources.sh` - updates every Git source and refreshes curated copies.
 
 ## Current Sources
 
@@ -20,6 +21,7 @@ Canonical path:
 - `sources/anthropic-skills` - Anthropic public Agent Skills.
 - `sources/vercel-agent-skills` - Vercel React, composition, and web UI guidance.
 - `sources/designer-skills` - Owl Listener design collection with 9 focused plugins and 96 design skills.
+- `sources/ui-ux-pro-max` - UI UX Pro Max design intelligence and searchable design-system data.
 - `sources/shadcn-ui` - official shadcn/ui skill, sparse checkout of `skills/shadcn`.
 - `sources/openai-plugins` - current OpenAI Codex plugin examples, including `plugins/build-web-apps`.
 - `sources/openai-skills` - legacy OpenAI skills catalog. This upstream repo marks itself deprecated; keep it only as a reference for old curated skills and prefer `sources/openai-plugins` for current Codex plugin examples.
@@ -63,6 +65,28 @@ Or copy a curated skill manually:
 cp -a /home/khan/PROJECTS/agent-skills-registry/curated/frontend/shadcn \
   /home/khan/PROJECTS/morefin-moliya/.agents/skills/shadcn
 ```
+
+## Update Yulduzcha Design Skills
+
+Update every configured Git upstream and synchronize all mapped curated skills:
+
+```bash
+/home/khan/PROJECTS/AGENT-SKILLS-REGISTRY/scripts/update-registry-sources.sh
+```
+
+`curated/source-map.tsv` records the upstream source for each curated skill.
+Local-only skills such as `coolify-ops` are explicitly preserved.
+
+To also reinstall the complete Designer Skills collection and UI UX Pro Max
+into Yulduzcha Bot:
+
+```bash
+/home/khan/PROJECTS/AGENT-SKILLS-REGISTRY/scripts/update-yulduzcha-design-skills.sh \
+  /home/khan/PROJECTS/Yulduzcha_Bot
+```
+
+The generated set keeps the core frontend skills, UI UX Pro Max, and every
+skill currently published by the Designer Skills upstream repository.
 
 ## Rules
 
