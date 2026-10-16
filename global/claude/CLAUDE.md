@@ -72,3 +72,8 @@ permission boundaries, release decisions, and the final verification story.
 ## Communication
 
 - Reply in the user's language (usually Uzbek), short and concrete; code, commits and docs in English.
+
+## This file
+
+- Synced to the public repo khan-umirzakoff/KHAN-AGENT-SKILLS-REGISTRY (`global/claude/`); edits
+  push automatically. Keep secrets, tokens and private hostnames out of it.
