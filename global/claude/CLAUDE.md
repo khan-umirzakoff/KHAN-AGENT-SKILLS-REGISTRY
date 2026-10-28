@@ -39,6 +39,7 @@ permission boundaries, release decisions, and the final verification story.
   - **Claude subagents:** wide code search or log/test digestion (`Explore` or `model: "haiku"`; never
     for judgements), and parallel independent implementation in separate worktrees (`"sonnet"` for
     routine, `"opus"` only for hard isolated slices). Pass `model` explicitly on every Agent call.
+    Never `"fable"` for subagents or reviews (too expensive); without Codex, review with `"opus"`.
   - **Codex desktop (in ChatGPT.app):** GUI and computer-control tasks.
 - **Reviews:** one per finished change, at the end, against the real diff, when the change is
   non-trivial or risky; not per edit and not as a ritual. The reviewer is a different model from the
