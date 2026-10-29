@@ -26,6 +26,8 @@ permission boundaries, release decisions, and the final verification story.
     on a precisely specified task, weak at designing or architecting from scratch): independent review
     of non-trivial diffs, security and migration review, adversarial challenge of a design, large
     read-only analysis, tests, and well-specified mechanical work. Read-only by default.
+    - Not for UI, UX, visual design or motion: Codex has no design taste (owner, 2026-10-30). Those
+      reviews go to an `"opus"` Claude critic that gets screenshots of every screen plus the diff.
     - Plugin `codex@openai-codex` (user scope): `/codex:review --base <branch>`,
       `/codex:adversarial-review <focus>`, `/codex:rescue --background` (agent `codex:codex-rescue`).
     - Direct: `codex exec --sandbox read-only -c model_reasoning_effort=medium "<packet>"`
