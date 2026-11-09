@@ -39,9 +39,10 @@ permission boundaries, release decisions, and the final verification story.
       other. Keep the plugin's review-gate Stop hook off.
     - A trivial Codex call costs about 12k Codex tokens: batch questions into one packet.
   - **Claude subagents:** wide code search or log/test digestion (`Explore` or `model: "haiku"`; never
-    for judgements), and parallel independent implementation in separate worktrees (`"sonnet"` for
-    routine, `"opus"` only for hard isolated slices). Pass `model` explicitly on every Agent call.
-    Never `"fable"` for subagents or reviews (too expensive); without Codex, review with `"opus"`.
+    for judgements), and parallel independent implementation in separate worktrees (`"opus"`, routine
+    slices included). Pass `model` explicitly on every Agent call. Never `"sonnet"` anywhere (owner,
+    2026-11-09: weak output and token-hungry, so not cheaper in practice). Never `"fable"` for
+    subagents or reviews (too expensive); without Codex, review with `"opus"`.
   - **Codex desktop (in ChatGPT.app):** GUI and computer-control tasks.
 - **Reviews:** one per finished change, at the end, against the real diff, when the change is
   non-trivial or risky; not per edit and not as a ritual. The reviewer is a different model from the
