@@ -67,6 +67,15 @@ permission boundaries, release decisions, and the final verification story.
 - Verify before claiming done: the smallest checks that prove the change; read the diff; say what
   was not verified.
 
+## Web search
+
+- Built-in `WebSearch` is denied in settings: it returned months-old facts in a 2026-11-22 benchmark
+  (1/9 fresh facts right; Exa 9/9).
+- Search with the Exa plugin (`web_search_exa`, then `web_fetch_exa` for full pages) first.
+- Deep multi-source research: Gemini through `agy -p "<packet>" --mode plan` in the background; start
+  the packet with "use only built-in search_web and URL reading, never MCP tools".
+- "Most popular repo for X": `gh search repos --sort stars`; no search engine found the top repo.
+
 ## Autonomy and safety
 
 - When the user is silent, keep going with work that is clearly needed and report everything done at
