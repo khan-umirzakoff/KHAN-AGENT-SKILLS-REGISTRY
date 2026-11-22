@@ -72,6 +72,8 @@ permission boundaries, release decisions, and the final verification story.
 - Built-in `WebSearch` is denied in settings: it returned months-old facts in a 2026-11-22 benchmark
   (1/9 fresh facts right; Exa 9/9).
 - Search with the Exa plugin (`web_search_exa`, then `web_fetch_exa` for full pages) first.
+- Backup and quick "what Google shows" check: Serper MCP (`google_search`, `scrape`; raw Google results,
+  about 1 s). Use it when Exa fails, runs out of credit, or to cross-check a fresh fact.
 - Deep multi-source research: Gemini through `agy -p "<packet>" --mode plan` in the background; start
   the packet with "use only built-in search_web and URL reading, never MCP tools".
 - "Most popular repo for X": `gh search repos --sort stars`; no search engine found the top repo.
