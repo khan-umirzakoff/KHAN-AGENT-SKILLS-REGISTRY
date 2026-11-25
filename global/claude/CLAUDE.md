@@ -35,6 +35,10 @@ permission boundaries, release decisions, and the final verification story.
       check the live state (e.g. Coolify apps, deployments, logs). The Coolify servers also carry write
       tools, which the sandbox does not limit: the packet says Coolify is for reading only (no deploy,
       restart, env or settings changes).
+    - Model: the newest `-sol` model, which is the `~/.codex/config.toml` default, so pass no `-m`; a
+      newer generation beats an older one. Use the newest `-astra` (`-m <name>`) only when the owner asks,
+      or for a high-stakes review (security, migrations, money, permissions) while limits allow: the
+      account is ChatGPT Plus and astra drains it fast. Current names: `~/.codex/models_cache.json`.
     - Codex writes code only when asked, only in its own worktree, and its diff is reviewed like any
       other. Keep the plugin's review-gate Stop hook off.
     - A trivial Codex call costs about 12k Codex tokens: batch questions into one packet.
